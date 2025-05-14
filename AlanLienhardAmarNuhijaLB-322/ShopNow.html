@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ShopNow</title>
+    <link
+      rel="icon"
+      type="Images/x-icon"
+      href="Images/16966f50ce766300d24a01d96abb54e9.jpg"
+    />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="Images/NewCoffeeLogo.png" alt="logo" />
+      </a>
+      <!-- Menu-Icon -->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <!-- links -->
+      <ul class="navbar">
+        <li><a href="index.html">Back</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="#colorblind-toggle">Colorblindness</a></li>
+
+      </ul>
+      <!-- Icon -->
+      <div class="header-icon">
+        <i class="bx bx-cart-alt"></i>
+        <span id="cart-count" class="cart-count">0</span>
+        <i class="bx bx-search" id="search-icon"></i>
+      </div>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Our own Product to buy from us<br /></h1>
+        <p>
+          Discover a World of Premium Coffee Machines and High-Quality Coffee
+          Supplies – Crafted for Coffee Lovers Who Seek the Perfect Brew, Every
+          Single Time. Elevate Your Home or Business with Our Expertly Designed
+          Equipment and Fresh Coffee Essentials.
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="Images/KaffeeHome.png" alt="main" />
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-content">
+        <h3>Your Cart</h3>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+          <p>Total: <span id="cart-total-price">0 Fr.</span></p>
+        </div>
+        <button id="close-cart" class="btn">Close</button>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="heading">
+        <h2>Our Products</h2>
+      </div>
+      <!-- container -->
+      <div class="products-container">
+        <!-- Example Product Box -->
+        <div class="box">
+          <img src="Images/Becher.png" alt="p1" />
+          <h3>Mug in different colors</h3>
+          <div class="content">
+            <span>15.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="1"
+              data-product-name="Mug in different colors"
+              data-product-price="21"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/GrosseBecher.png" alt="p2" />
+          <h3>Big Mugs in different colors</h3>
+          <div class="content">
+            <span>19.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="20"
+              data-product-name="Big Mug in different colors"
+              data-product-price="19.95"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/ZusatzBecher.png" alt="p3" />
+          <h3>Mini Coffee Tables</h3>
+          <div class="content">
+            <span>21.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="30"
+              data-product-name="Mini Coffee Tables"
+              data-product-price="21.95"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/BaristaSet.png" alt="p4" />
+          <h3>full Barista Set</h3>
+          <div class="content">
+            <span>44.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="40"
+              data-product-name="Full Barista Set"
+              data-product-price="44.95"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/CoffeeMaschineModern.png" alt="p5" />
+          <h3>Modern Coffee Maker</h3>
+          <div class="content">
+            <span>379 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="50"
+              data-product-name="Modern Coffee Maker"
+              data-product-price="379"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/Cutlery.png" alt="p6" />
+          <h3>Cutlery Set</h3>
+          <div class="content">
+            <span>25.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="60"
+              data-product-name="Cutlery Set"
+              data-product-price="25.95"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/ErstmalKaffee.png" alt="p7" />
+          <h3>Coffee Shield</h3>
+          <div class="content">
+            <span>39.95 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="70"
+              data-product-name="Coffee Shield"
+              data-product-price="39.95"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/Sticker.png" alt="p8" />
+          <h3>Wall Stickers</h3>
+          <div class="content">
+            <span>9.90 Fr.</span>
+            <a
+              href="#"
+              class="add-to-cart"
+              data-product-id="80"
+              data-product-name="Wall Stickers"
+              data-product-price="9.90"
+              >Add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- products-container -->
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-box">
+        <h3>Coffee Shop</h3>
+        <p>
+          If you enjoyed visiting our shop, be sure to check out our social
+          media accounts, too!
+        </p>
+        <div class="social">
+          <a href="https://auth.meta.com/"><i class="bx bxl-meta"></i></a>
+          <a href="https://x.com/i/flow/login"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>5722 Kame House, Okinawa Japan</span>
+          <span><i class="bx bxs-phone"></i>076 212 96 34</span>
+          <span><i class="bx bxs-envelope"></i>AmarAlanCoffee@shop.ch</span>
+        </div>
+      </div>
+    </section>
+
+     <!-- Colorblindness Mode Toggle -->
+     <div id="colorblind-toggle" class="colorblind-toggle">
+      <h3>Farben für Farbenblinde anpassen:</h3>
+      <button class="colorblind-btn" onclick="changeColorBlindMode('normal')">Normal</button>
+      <button class="colorblind-btn" onclick="changeColorBlindMode('deuteranopia')">Green blindness</button>
+      <button class="colorblind-btn" onclick="changeColorBlindMode('protanopia')">Red blindness</button>
+      <button class="colorblind-btn" onclick="changeColorBlindMode('tritanopia')">Blue blindness</button>
+    </div>
+  </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&#169; Amar Nuhija & Alan Lienhard</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

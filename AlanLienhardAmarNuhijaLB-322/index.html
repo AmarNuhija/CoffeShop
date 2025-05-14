@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="Images/x-icon"
+      href="Images/16966f50ce766300d24a01d96abb54e9.jpg"
+    />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <title>Amar & Alan's Coffee Shop</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="Images/NewCoffeeLogo.png" alt="logo" />
+      </a>
+      <!-- Menu-Icon -->
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <!-- links -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#customers">Customers</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="#colorblind-toggle">Colorblindness</a></li>
+      </ul>
+      <!-- Icon -->
+      <div class="header-icon">
+        <i class="bx bx-cart-alt"></i>
+        <span id="cart-count" class="cart-count">0</span>
+        <i class="bx bx-search" id="search-icon"></i>
+      </div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input type="search" name="" id="" placeholder="Search Here..." />
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>
+          Start your day <br />
+          with coffee
+        </h1>
+        <p>
+          Come in, sip, relax, and enjoy. Your perfect cup awaits, crafted with
+          care from the finest beans. Whether you're here to catch up, unwind,
+          or just savor the moment, we’re ready to make your day a little
+          brighter.
+        </p>
+        <a class="btn" href="ShopNow.html">Shop Now</a>
+      </div>
+      <div class="home-img">
+        <img src="Images/PhotoHome.png" alt="main" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="Images/about.jpg" alt="about" />
+      </div>
+      <div class="about-text">
+        <h2>Our Journey</h2>
+        <p>
+          Welcome to Amar & Alan's Coffee Shop, where every cup tells a story.
+          Nestled in the heart of Japan, Kame House, we are more than just a
+          coffee shop – we are a cozy corner for friends, a quiet space for
+          thinkers, and a lively meeting place for the community.
+        </p>
+        <p>
+          Our journey began with a simple love for coffee and a passion for
+          bringing people together. At Amar & Alan's Coffee Shop, we believe in
+          the magic of the perfect brew. That’s why we carefully source our
+          beans from the finest farms around the world, roast them locally to
+          perfection, and craft each cup with care. Whether you’re here for a
+          morning pick-me-up, an afternoon escape, or an evening wind-down, we
+          aim to serve coffee that inspires.
+        </p>
+        <p>
+          But it’s not just about the coffee. Our space is designed to feel like
+          your second home – warm, inviting, and filled with good vibes. Enjoy a
+          cozy nook with a book, savor a fresh pastry from our local bakery
+          partners, or simply take a moment to soak in the atmosphere. Come in,
+          stay awhile, and be part of our story. Because at Amar & Alan's Coffee
+          Shop, it’s always about good coffee, great people, and creating
+          moments that matter. Welcome to your new favorite spot. We can’t wait
+          to brew something special for you.
+        </p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+<div class="cart-modal" id="cart-modal">
+  <div class="cart-content">
+    <h3>Your Cart</h3>
+    <div class="cart-items" id="cart-items">
+    </div>
+    <div class="cart-total">
+      <p>Total: <span id="cart-total-price">0 Fr.</span></p>
+    </div>
+    <button id="close-cart" class="btn">Close</button>
+  </div>
+</div>
+
+
+    <!-- Products -->
+    <section class="products" id="products">
+      <div class="heading">
+        <h2>Our Products</h2>
+      </div>
+      <!-- container -->
+      <div class="products-container">
+        <div class="box">
+          <img src="Images/p1.png" alt="p1" />
+          <h3>Americano Pure</h3>
+          <div class="content">
+            <span>21 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="1" data-product-name="Americano Pure" data-product-price="21">Add to cart</a>
+          </div>
+        </div>
+        
+        <div class="box">
+          <img src="Images/p2.png" alt="p2" />
+          <h3>Flat White</h3>
+          <div class="content">
+            <span>7.95 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="2" data-product-name="Flat White" data-product-price="7.95">Add to cart</a>
+          </div>
+        </div>
+      
+        <div class="box">
+          <img src="Images/p3.png" alt="p3" />
+          <h3>Turkish Coffee</h3>
+          <div class="content">
+            <span>15.50 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="3" data-product-name="Turkish Coffee" data-product-price="15.50">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/p4.png" alt="p4" />
+          <h3>Espresso</h3>
+          <div class="content">
+            <span>13.50 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="4" data-product-name="Espresso" data-product-price="13.50">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/p5.png" alt="p5" />
+          <h3>Café au Lait</h3>
+          <div class="content">
+            <span>15 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="5" data-product-name="Café au Lait" data-product-price="15">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/p6.png" alt="p6" />
+          <h3>Mocha</h3>
+          <div class="content">
+            <span>17 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="6" data-product-name="Mocha" data-product-price="17">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/p7new.png" alt="p7" />
+          <h3>White Mocha</h3>
+          <div class="content">
+            <span>16.50 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="7" data-product-name="White Mocha" data-product-price="16.50">Add to cart</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="Images/p8.png" alt="p8" />
+          <h3>Latte Macchiato</h3>
+          <div class="content">
+            <span>11 Fr.</span>
+            <a href="#" class="add-to-cart" data-product-id="8" data-product-name="Latte Macchiato" data-product-price="11">Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- products-container -->
+    </section>
+
+    <!-- Customers -->
+    <section class="customers" id="customers">
+      <div class="heading">
+        <h2>Our Customer's</h2>
+      </div>
+      <!-- Container -->
+      <div class="customers-container">
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            I love the cozy atmosphere, friendly staff, and, of course, the
+            amazing coffee! The Mocha is fantastic! I want to try turkish.
+          </p>
+          <h2>Son Goku</h2>
+          <img src="Images/dragon-ball-son-goku_6240845.jpg" alt="rev1" />
+        </div>
+        <!-- box -->
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            The perfect spot for great coffee, warm smiles, and memorable
+            moments – It's perfect! You need to try the turkish one, amazing!
+          </p>
+          <h2>Vegeta</h2>
+          <img
+            src="Images/png-clipart-vegeta-goku-gohan-bulma-chi-chi-goku-face-head.png"
+            alt="rev2"
+          />
+        </div>
+        <!-- box -->
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            My favorite coffee shop! The coffee is always perfect, and the
+            atmosphere feels like home. My favorite, classic Americano.
+          </p>
+          <h2>Beerus</h2>
+          <img src="Images/Beerus-battle-of-z-opening.webp" alt="rev3" />
+        </div>
+        <div class="box">
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            Great coffee, cozy atmosphere, and super friendly staff. My favorite
+            caffee yet in town! Americano Pure is AMAZING!
+          </p>
+          <h2>Hulaj-Express</h2>
+          <img src="Images/ErjonLB.jpg" alt="rev1" />
+        </div>
+        <!-- box -->
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="footer-box">
+        <h3>Coffee Shop</h3>
+        <p>
+          If you enjoyed visiting our shop, be sure to check out our social
+          media accounts, too!
+        </p>
+        <div class="social">
+          <a href="https://auth.meta.com/"><i class="bx bxl-meta"></i></a>
+          <a href="https://x.com/i/flow/login"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://www.tiktok.com/"><i class="bx bxl-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-box">
+        <h3>Support</h3>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Return Policy</a></li>
+        <li><a href="#">Terms Of Use</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>View Guides</h3>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog Posts</a></li>
+        <li><a href="#">Our Branches</a></li>
+      </div>
+      <div class="footer-box">
+        <h3>Contact</h3>
+        <div class="contact">
+          <span><i class="bx bxs-map"></i>5722 Kame House, Okinawa Japan</span>
+          <span><i class="bx bxs-phone"></i>076 212 96 34</span>
+          <span><i class="bx bxs-envelope"></i>AmarAlanCoffee@shop.ch</span>
+        </div>
+      </div>
+    </section>
+
+       <!-- Colorblindness Mode Toggle -->
+       <div id="colorblind-toggle" class="colorblind-toggle">
+        <h3>Farben für Farbenblinde anpassen:</h3>
+        <button class="colorblind-btn" onclick="changeColorBlindMode('normal')">Normal</button>
+        <button class="colorblind-btn" onclick="changeColorBlindMode('deuteranopia')">Green blindness</button>
+        <button class="colorblind-btn" onclick="changeColorBlindMode('protanopia')">Red blindness</button>
+        <button class="colorblind-btn" onclick="changeColorBlindMode('tritanopia')">Blue blindness</button>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&#169; Amar Nuhija & Alan Lienhard</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
